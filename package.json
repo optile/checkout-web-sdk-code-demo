@@ -1,13 +1,16 @@
 {
   "name": "checkout-web-sdk-code-demo",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://optile.github.io/checkout-web-sdk-code-demo",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@payoneer/checkout-web": "^1.1.0",
