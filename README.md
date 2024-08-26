@@ -1,3 +1,3 @@
 # checkout-web-sdk-code-demo
 
-Integration demo for Checkout Web
+Checkout Web Documentation  https://checkoutdocs.payoneer.com/docs/getting-started-checkout-web-sdk
