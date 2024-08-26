@@ -45,11 +45,10 @@ export async function generateList(
   const listRequest = {
     allowDelete: false,
     callback: {
-      cancelUrl:
-        "https://optile.github.io/checkout-web-sdk-code-demo/checkout/failed",
+      cancelUrl: "https://optile.github.io/checkout-web-sdk-code-demo/#/cancel",
       notificationUrl: "https://dev.oscato.com/shop/notify.html",
       returnUrl:
-        "https://optile.github.io/checkout-web-sdk-code-demo/checkout/success",
+        "https://optile.github.io/checkout-web-sdk-code-demo/#/thankyou",
       summaryUrl: "https://dev.oscato.com/shop/summary.html",
     },
     country: country.countryCode,
