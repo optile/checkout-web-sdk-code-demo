@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { products } from "../../constants";
+import { products } from "../../utils";
 import ProductOverview from "../product-overview";
 import "./sidebar.scss";
 import MainContext from "../../contexts/MainContext";

@@ -1,7 +1,7 @@
 import Header from "../components/header";
 import PaymentMethods from "../components/payment-methods";
 import Sidebar from "../components/sidebar";
-import { getCountryDetails } from "../constants";
+import { getCountryDetails } from "../utils";
 
 export default function Checkout() {
     console.log("getCountryDetails", getCountryDetails())

@@ -1,6 +1,6 @@
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import { MainContextProvider } from "./contexts/MainContext";
-import { currentLang, getCountryDetails } from "./constants";
+import { currentLang, getCountryDetails } from "./utils.js";
 import Checkout from "./pages/Checkout.jsx";
 import Success from "./pages/Success.jsx";
 import Cancel from "./pages/Cancel.jsx";

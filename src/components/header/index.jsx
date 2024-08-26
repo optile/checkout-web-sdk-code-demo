@@ -3,7 +3,7 @@ import payoneerLogo from "../../assets/payoneer-circle.png";
 import "./header.scss";
 import { useContext, useEffect } from "react";
 import MainContext from "../../contexts/MainContext";
-import { currentLang, getCountryDetails } from "../../constants";
+import { currentLang, getCountryDetails } from "../../utils";
 
 export default function Header() {
   const [searchParams, setSearchParams] = useSearchParams();

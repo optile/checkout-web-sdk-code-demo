@@ -37,7 +37,7 @@ export const getCountryDetails = (lang = "en") => {
   return countryDetails.find(({ language }) => lang === language);
 };
 
-export const currentLang = countryDetails.find(({ language }) => language === new URLSearchParams(window.location.search).get("lang"))?.language || "en-GB"; 
+export const currentLang = countryDetails.find(({ language }) => language === new URLSearchParams(window.location.search).get("lang"))?.language || "en-US"; 
 
 export const products = [
   {
