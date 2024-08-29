@@ -1,0 +1,42 @@
+.hidden {
+  display: none;
+}
+
+.method-wrapper {
+  border: 1px solid #bbb;
+  margin: 10px 0;
+  border-radius: 10px;
+
+  > .method-body {
+    padding: 40px 20px;
+    border-top: 1px solid #bbb;
+  }
+}
+
+label.method-header {
+  cursor: pointer;
+  padding: 13px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  > .method-label {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  > .network-logos-wrapper > img {
+    max-width: 45px;
+
+    @media all and (max-width: 767px) {
+      max-width: 30px;
+    }
+  }
+
+  &:hover {
+    background: #eee;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
