@@ -12,26 +12,21 @@ export default function PaymentMethods() {
   const [checkout, setCheckout] = useState(undefined);
   const [activeNetwork, setActiveNetwork] = useState("");
   const [searchParams] = useSearchParams();
+  const env = "pi-nightly.integration";
 
   /**
    * method, env, and longId are passed as URL query params
    */
   const method = searchParams.get("method");
-  const env = searchParams.get("env") || "pi-nightly.integration";
-  const id = searchParams.get("longId");
 
   useEffect(() => {
     /**
-     * Use the longId passed by URL query param or generate a new list session.
+     * Generate a new list session.
      */
-    if (!id) {
       generateList("EMBEDDED", 100, country, method || "").then((response) => {
         setLongId(response?.identification?.longId);
       });
-    } else {
-      setLongId(id);
-    }
-  }, [method, country, searchParams, id]);
+  }, [method, country]);
 
   useEffect(() => {
     /**
