@@ -43,23 +43,6 @@ To preview the production build locally:
 
     npm run preview
 
-## Configuration
-
-By default, this demo application uses an internal integration environment to generate list session. You can change the environment by passing `longId` and `env` as URL query parameters.
-
-*Note: More info about generating backend payment session* [here](https://checkoutdocs.payoneer.com/docs/basic-integration-checkout-web-sdk)
-
-**Example Usage:**
-
-    {BASE_URL}/?longId=longId&env=test
-
-### Available Environments
-
-Specify the environment using the `env` parameter. Available options include:
-
--   `test` - Sandbox environment
--   `live` - Production environment
-
 ## Deployment
 
 This project is automatically deployed to GitHub Pages via GitHub Actions. Any push to the `main` branch triggers the deployment process.
